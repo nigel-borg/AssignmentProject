@@ -15,7 +15,7 @@ void Start () {
 
   // Update is called once per frame
 void Update () {
-    movement = Input.GetAxis ("Horizontal");
+    movement = Input.GetAxis ("Horizontal");// moves left and right of the sprite
     if (movement > 0f) {
       rigidBody.velocity = new Vector2 (movement * speed, rigidBody.velocity.y);
     }
@@ -25,7 +25,7 @@ void Update () {
     else {
     rigidBody.velocity = new Vector2 (0,rigidBody.velocity.y);
     }
-    if(Input.GetKey (KeyCode.UpArrow)){
+    if(Input.GetKey (KeyCode.UpArrow)){// moves up the sprite 
     rigidBody.velocity = new Vector2(rigidBody.velocity.x,jumpSpeed);
     }
 }

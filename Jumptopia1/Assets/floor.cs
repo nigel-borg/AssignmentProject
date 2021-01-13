@@ -5,7 +5,7 @@ using UnityEngine;
 public class floor : MonoBehaviour
 {
     // Start is called before the first frame update
-    float destroyTime = 5;
+    float destroyTime = 5;//does not effect time game starts
     void Start()
     {
         
