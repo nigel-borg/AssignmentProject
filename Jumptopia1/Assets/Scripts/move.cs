@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class move : MonoBehaviour
 {
@@ -14,7 +15,8 @@ void Start () {
 }
 
   // Update is called once per frame
-void Update () {
+void Update () 
+  {
     movement = Input.GetAxis ("Horizontal");// moves left and right of the sprite
     if (movement > 0f) {
       rigidBody.velocity = new Vector2 (movement * speed, rigidBody.velocity.y);
@@ -28,5 +30,10 @@ void Update () {
     if(Input.GetKey (KeyCode.UpArrow)){// moves up the sprite 
     rigidBody.velocity = new Vector2(rigidBody.velocity.x,jumpSpeed);
     }
-}
+
+    if(transform.position.y < -6f)
+    {
+      SceneManager.LoadScene(0);
+    }
+  }
 }
