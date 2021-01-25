@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class move : MonoBehaviour
 {
-public float speed = 5f;
-public float jumpSpeed = 4f;
+public float speed = 20f;
+public float jumpSpeed = 8f;
 private float movement = 0f;
+
 private Rigidbody2D rigidBody;
   // Use this for initialization
 void Start () {
@@ -27,13 +28,21 @@ void Update ()
     else {
     rigidBody.velocity = new Vector2 (0,rigidBody.velocity.y);
     }
-    if(Input.GetKey (KeyCode.UpArrow)){// moves up the sprite 
-    rigidBody.velocity = new Vector2(rigidBody.velocity.x,jumpSpeed);
-    }
 
-    if(transform.position.y < -6f)
-    {
-      SceneManager.LoadScene(0);
+    if(Input.GetKey (KeyCode.UpArrow)){// moves up the sprite 
+      rigidBody.velocity = new Vector2(rigidBody.velocity.x,jumpSpeed);
     }
+    
+
+
+    
   }
+
+  void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Die")
+        {
+          SceneManager.LoadScene(2);
+        }
+    }
 }
