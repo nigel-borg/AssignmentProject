@@ -25,12 +25,14 @@ public class score : MonoBehaviour
         scoreText.text = "Score " + currentScore;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionExit2D(Collision2D col)
     {
         if(col.gameObject.tag == "Respawn")
         {
             currentScore+=1;
             HandleScore();
+            Debug.Log("Score is being added. ");
+            
         }
     }
 }
