@@ -15,6 +15,7 @@ public class platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x,transform.position.y-0.08f),0.1f);
+        //transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x,transform.position.y-0.08f),0.1f);
+        transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
 }
