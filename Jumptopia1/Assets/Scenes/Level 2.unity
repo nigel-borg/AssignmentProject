@@ -138,6 +138,16 @@ PrefabInstance:
       propertyPath: pipe
       value: 
       objectReference: {fileID: 189462232}
+    - target: {fileID: 705661178922635029, guid: 8cf54fbdaf6ae794292ca851ce9ff4fa,
+        type: 3}
+      propertyPath: height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 705661178922635029, guid: 8cf54fbdaf6ae794292ca851ce9ff4fa,
+        type: 3}
+      propertyPath: maxTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 705661178922635030, guid: 8cf54fbdaf6ae794292ca851ce9ff4fa,
         type: 3}
       propertyPath: m_RootOrder
@@ -270,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105273451}
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 9.94, y: 3.39, z: 0}
+  m_LocalPosition: {x: 7.17, y: 3.39, z: 0}
   m_LocalScale: {x: 3.2238, y: 3.5058823, z: 3.2238}
   m_Children: []
   m_Father: {fileID: 0}
@@ -357,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235336882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3777165, y: -1.95, z: 0}
+  m_LocalPosition: {x: 6.16, y: -2.09, z: 0}
   m_LocalScale: {x: 5.5563, y: 5.5563, z: 5.5563}
   m_Children: []
   m_Father: {fileID: 0}
@@ -438,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348404484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.803305, y: -3.8, z: 0}
+  m_LocalPosition: {x: -7.91, y: -3.8, z: 0}
   m_LocalScale: {x: 3.2831, y: 3.2831, z: 3.2831}
   m_Children: []
   m_Father: {fileID: 0}
@@ -874,6 +884,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7064839894479291272, guid: 358152fcc7ab2ae4ba1917e7d4d1b001,
+        type: 3}
+      propertyPath: m_Name
+      value: ScoreText
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064839894479291319, guid: 358152fcc7ab2ae4ba1917e7d4d1b001,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -858.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064839894479291319, guid: 358152fcc7ab2ae4ba1917e7d4d1b001,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 381.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358152fcc7ab2ae4ba1917e7d4d1b001, type: 3}
 --- !u!1001 &1097497097
@@ -901,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 3606370700730876791, guid: a801123dab287164abb5509107a6c034,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 3606370700730876791, guid: a801123dab287164abb5509107a6c034,
         type: 3}
@@ -958,6 +983,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 6933656635232404423, guid: a801123dab287164abb5509107a6c034,
+        type: 3}
+      propertyPath: ScoreText
+      value: 
+      objectReference: {fileID: 1596923037}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a801123dab287164abb5509107a6c034, type: 3}
 --- !u!1001 &1241187929
@@ -1041,3 +1071,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1908267646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3606370700730876796, guid: a801123dab287164abb5509107a6c034,
+    type: 3}
+  m_PrefabInstance: {fileID: 1097497097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!68 &1908267647
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908267646}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.16, y: -0.21854809}
+  - {x: 0.15673813, y: -0.22507198}

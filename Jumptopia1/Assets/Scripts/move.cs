@@ -43,6 +43,8 @@ void Update ()
         if(col.gameObject.tag == "Die")
         {
           SceneManager.LoadScene(2);
-        }
-    }
+        } 
+}
+
+
 }
